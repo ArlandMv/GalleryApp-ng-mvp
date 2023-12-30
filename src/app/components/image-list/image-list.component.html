@@ -1,0 +1,13 @@
+<div *ngIf="images && images.length > 0" class="gallery-container">
+  <div
+    *ngFor="let image of images"
+    class="gallery-item"
+    (click)="navigateToImageDetails(image.id)"
+  >
+    <img [src]="image.urls.small" alt="{{ image.alt_description }}" />
+  </div>
+</div>
+
+<div *ngIf="!images || images.length === 0" class="no-data-message">
+  No images available.
+</div>

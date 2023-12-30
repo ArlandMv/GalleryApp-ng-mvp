@@ -1,0 +1,32 @@
+<div class="container mt-5" *ngIf="image">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img-fluid" [src]="image.imageUrl" alt="{{ image.title }}" />
+    </div>
+    <div class="col-md-6">
+      <h2>{{ image.title }}</h2>
+      <p>{{ image.description }}</p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="buyImage()"
+        tooltip="Future Feature"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5" *ngIf="!image">
+  <p class="text-center">Image details not found.</p>
+</div>
+
+<!--div *ngIf="image">
+  <h2>{{ image.title }}</h2>
+  <button type="button" class="btn btn-primary" tooltip="Foo">Foo</button>
+  <img [src]="image.imageUrl" alt="{{ image.title }}" />
+  <p>{{ image.description }}</p>
+</div>
+
+<div-- *ngIf="!image">Image not found.</div-->

@@ -1,0 +1,46 @@
+ng generate c components/image-list
+ng generate c components/image-details
+modify routing
+
+ng generate service services/image
+ng test --include src/app/services/image.service.spec.ts
+
+modify list
+ng test --include=**/image-list.component.spec.ts
+
+modify details
+ng test --include=**/image-details.component.spec.ts
+
+
+ng generate class models/image
+ng generate class models/imgUnsplash
+
+
+
+src/
+|-- app/
+|   |-- components/
+|   |   |-- image-list/
+|   |   |   |-- image-list.component.ts
+|   |   |   |-- image-list.component.html
+|   |   |   |-- image-list.component.css
+|   |   |
+|   |   |-- image-details/
+|   |       |-- image-details.component.ts
+|   |       |-- image-details.component.html
+|   |       |-- image-details.component.css
+|   |
+|   |-- models/
+|   |   |-- image.model.ts
+|   |
+|   |-- services/
+|   |   |-- image.service.ts
+|   |
+|   |-- app-routing.module.ts
+|   |-- app.component.ts
+|   |-- app.component.html
+|   |-- app.component.css
+|   |-- app.module.ts
+|-- assets/
+|   |-- /* place your static assets here, e.g., images */
+|-- styles.css

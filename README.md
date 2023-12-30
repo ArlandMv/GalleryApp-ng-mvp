@@ -1,6 +1,22 @@
 # GalleryAppNgMvp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+Galería de imágenes con Angular que muestra una colección mediante el uso del API X. Los usuarios pueden explorar, ver detalles y descargar imágenes fácilmente.
+
+Angular version 16.2.8.
+
+## FEATURES
+
+- Angular basics (Services+Components)
+- API CALLS
+- Search method
+
+RANDOM
+https://api.unsplash.com/photos/random?client_id=ZOAGMHywNIg-5wPxsaeoovK6T8FdoddMa2y2ueRaXDw
+
+COLLECTIONS
+
+PUBLIC API
+https://unsplash.com/es/colecciones/1127153/happy-new-year
 
 ## Development server
 
