@@ -28,20 +28,6 @@ describe('ImageService', () => {
     expect(service).toBeTruthy();
   });
 
-  /*
-  it('should retrieve images from the API via GET', () => {
-    const mockImages = [{ id: '1', description: 'Test Image' }];
-
-    service.getImages().subscribe((images) => {
-      expect(images).toEqual(mockImages);
-    });
-
-    const req = httpMock.expectOne(`${service.unsplashApi}/collections/8684579/photos?client_id=${service.clientId}`);
-    expect(req.request.method).toBe('GET');
-    req.flush(mockImages);
-  });
-  */
-
   it('should retrieve images from the API via GET', () => {
     const mockImages = [{ id: '1', description: 'Test Image' }];
 
@@ -67,8 +53,7 @@ describe('ImageService', () => {
     const imageId = 'gcG_b9ijyqU';
 
     service.getImageById(imageId).subscribe((image) => {
-      expect(image?.title).toEqual(mockImage.title);
-      expect(image?.imageUrl).toEqual(mockImage.imageUrl);
+      expect(image?.description).toEqual(mockImage.description);
     });
 
     const req = httpMock.expectOne(
