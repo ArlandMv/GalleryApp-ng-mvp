@@ -1,0 +1,10 @@
+<div class="component" style="background-color: lightslategray">
+  <div class="tilt-container" (mousemove)="onMouseMove($event)">
+    <div
+      class="tilt-element"
+      [style.transform]="'rotateX(' + tiltX + 'deg) rotateY(' + tiltY + 'deg)'"
+    >
+      <img class="img-fluid" [src]="this.imageUrl" [alt]="this.imageTitle" />
+    </div>
+  </div>
+</div>

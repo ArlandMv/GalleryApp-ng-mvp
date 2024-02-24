@@ -8,9 +8,10 @@ import { ImageDetailsComponent } from './components/image-details/image-details.
 import { HttpClientModule } from '@angular/common/http';
 import { ImageService } from './services/image.service';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ImageTiltComponent } from './components/image-tilt/image-tilt.component';
 
 @NgModule({
-  declarations: [AppComponent, ImageListComponent, ImageDetailsComponent],
+  declarations: [AppComponent, ImageListComponent, ImageDetailsComponent, ImageTiltComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
