@@ -3,14 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Image } from '../models/image';
-import { environment } from 'src/environments/environment.development';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ImageService {
-  unsplashApi = environment.unsplashApi;
-  clientId = environment.clientId;
+  unsplashApi = 'https://api.unsplash.com';
+  clientId = environment.CLIENT_ID;
 
   constructor(private http: HttpClient) {}
 
